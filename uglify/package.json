@@ -8,6 +8,8 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
+    "uglify-js": "^3.13.3"
   }
 }
