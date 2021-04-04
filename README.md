@@ -1,13 +1,8 @@
-# Pulse
-
-Pulse is a BPM counter prototype written in Elm. After writing a very basic Elm component for [finding car classes](https://github.com/skovmand/fh4-car-class-finder) in Forza Horizon 4 (using the Elm `sandbox` application model), I wanted to explore the `element` application model, including commands and subscriptions.
-
-At the same time, I am a real newbie at both Tailwind CSS, Flexbox and animations. I wanted to include these into the project as well.
-
+# Banko
 
 ## Setting up for development
 
-First make sure that Elm 0.19.1 is installed globally. For watch mode to be enabled, [fswatch](https://github.com/emcrisostomo/fswatch) is required too. I installed it through Homebrew.
+First make sure that Elm 0.19.1 is installed globally.
 
 Then install `tailwind` and `uglifyjs` like this:
 
@@ -31,12 +26,6 @@ make clean dev
 
 # Or, if only changes elements should be digested
 make dev
-
-# To run in watch mode for the elm folder (requires fswatch)
-fswatch -o elm/src | xargs -n1 -I{} make elm
-
-# Watch mode for both elm, html and tailwind
-fswatch -o elm/src html tailwind | xargs -n1 -I{} make dev
 ```
 
 ## Production builds
