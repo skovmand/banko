@@ -1,5 +1,5 @@
 module.exports = {
-  purge: ["../elm/src/BpmCounter.elm", "../html/index.html"],
+  purge: ["../elm/src/Main.elm", "../html/index.html"],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
