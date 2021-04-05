@@ -80,7 +80,7 @@ bankoRow numbersInRow drawnNumbers =
 bankoCard : Int -> Set.Set Int -> Html Msg
 bankoCard number drawnNumbers =
     if Set.member number drawnNumbers then
-        div [ class "py-2 px-2 m-1 flex flex-1 items-center justify-center rounded-md text-white bg-red-500 cursor-pointer select-none", onClick (MarkUndrawn number) ] [ text (String.fromInt number) ]
+        div [ class "card drawn", onClick (MarkUndrawn number) ] [ text (String.fromInt number) ]
 
     else
-        div [ class "py-2 px-2 m-1 flex flex-1 items-center justify-center rounded-md text-white bg-gray-300 cursor-pointer select-none", onClick (MarkDrawn number) ] [ text (String.fromInt number) ]
+        div [ class "card notDrawn", onClick (MarkDrawn number) ] [ text (String.fromInt number) ]

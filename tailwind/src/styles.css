@@ -2,8 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body {
-  height: 100%;
-  font-family: 'Rubik', sans-serif;
+html,
+body {
+  font-family: "Rubik", sans-serif;
   font-size: 1.3rem;
+  height: 100%;
+}
+
+@layer components {
+  .card {
+    @apply py-2 px-2 m-1 flex flex-1 items-center justify-center rounded-md text-white cursor-pointer select-none;
+  }
+
+  .drawn {
+    @apply bg-red-500;
+  }
+
+  .notDrawn {
+    @apply bg-gray-300;
+  }
 }
