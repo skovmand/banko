@@ -69,7 +69,7 @@ boardRows =
 
 view : BankoBoard -> Html Msg
 view drawnNumbers =
-    div [ class "flex flex-col h-full" ] (List.map (\x -> bankoRow x drawnNumbers) boardRows)
+    div [ class "flex flex-col h-screen" ] (List.map (\x -> bankoRow x drawnNumbers) boardRows)
 
 
 bankoRow : List Int -> Set.Set Int -> Html Msg
