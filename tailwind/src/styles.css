@@ -12,6 +12,7 @@ body {
 @layer components {
   .card {
     @apply py-2 px-2 m-1 flex flex-1 items-center justify-center rounded-md text-white cursor-pointer select-none;
+    transition: all .5s ease-in;
   }
 
   .drawn {
